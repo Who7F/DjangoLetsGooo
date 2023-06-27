@@ -1,3 +1,10 @@
 from django.contrib import admin
 
-# Register your models here.
+from helloworld.models import Peopole
+
+class PeopoleAdmin(admin.ModelAdmin):
+	list_display = ('name', 'yeahBirth')
+
+admin.site.register(Peopole, PeopoleAdmin)
+
+

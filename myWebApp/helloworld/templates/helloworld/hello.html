@@ -1,0 +1,10 @@
+{% extends 'helloworld/base.html' %}
+
+{% block content %}
+<h1>Hello World</h1>
+<ul>
+	{% for x in xs %}
+		<li>{{x.name}}</li>
+	{% endfor %}
+</ul>
+{% endblock %}
