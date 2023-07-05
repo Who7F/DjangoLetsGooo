@@ -3,8 +3,8 @@
 {% block content %}
 <h1>Hello World</h1>
 <ul>
-	{% for x in xs %}
-		<li><a href="{% url 'person' x.id %}">{{x.name}}</a></li>
+	{% for y in ys %}
+		<li>{{y.people}}</li>
 	{% endfor %}
 </ul>
 {% endblock %}

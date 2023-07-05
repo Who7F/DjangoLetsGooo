@@ -20,5 +20,7 @@ from helloworld import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+	path('helloworld/<int:id>', views.helloDetail, name='person'),
 	path('helloworld', views.hello),
+	path('order', views.order),
 ]
