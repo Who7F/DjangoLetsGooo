@@ -23,4 +23,6 @@ urlpatterns = [
 	path('helloworld/<int:id>', views.helloDetail, name='person'),
 	path('helloworld', views.hello),
 	path('order', views.order),
+	path('contact/', views.contact, name='contact'),
+	path('helloworld/add/', views.add, name='add'),
 ]
