@@ -1,0 +1,10 @@
+{% extends 'helloworld/base.html' %}
+
+{% block content %}
+<h1>lest delelte {{ person.name }}</h1>
+<form action="" method="post">
+{% csrf_token %}
+
+<input type = "submit" value = "Delete">
+</form>
+{% endblock %}

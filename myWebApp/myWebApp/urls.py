@@ -21,8 +21,10 @@ from helloworld import views
 urlpatterns = [
     path('admin/', admin.site.urls),
 	path('helloworld/<int:id>', views.helloDetail, name='person'),
-	path('helloworld', views.hello),
+	path('helloworld', views.hello, name = 'all-people'),
 	path('order', views.order),
 	path('contact/', views.contact, name='contact'),
 	path('helloworld/add/', views.add, name='add'),
+	path('helloworld/<int:id>/change/', views.update, name='update'),
+	path('helloworld/<int:id>/delete/', views.delete, name='delete')
 ]
